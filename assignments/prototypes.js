@@ -21,7 +21,7 @@ function GameObject(objAttrs) {
 }
 
 GameObject.prototype.destroy = function() {
-  return `Object was removed from the game.`;
+  return `${this.name} was removed from the game.`;
 }
 
 /*
@@ -75,7 +75,7 @@ Humanoid.prototype.greet = function() {
 
 // Test you work by un-commenting these 3 objects and the list of console logs below:
 
-/*
+
   const mage = new Humanoid({
     createdAt: new Date(),
     dimensions: {
@@ -136,7 +136,7 @@ Humanoid.prototype.greet = function() {
   console.log(archer.greet()); // Lilith offers a greeting in Elvish.
   console.log(mage.takeDamage()); // Bruce took damage.
   console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
-*/
+
 
   // Stretch task: 
   // * Create Villain and Hero constructor functions that inherit from the Humanoid constructor function.  
